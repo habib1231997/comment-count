@@ -1,3 +1,16 @@
+body{
+font:$(body.text);
+color:var(--jt-heading-link);
+background-color:var(--bs-body-bg);
+line-height:1.5;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+text-rendering:optimizeLegibility;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 .d-block{
 display:none;
 }
@@ -178,7 +191,7 @@ box-shadow:none!important;
 #header{
 background-color:var(--jt-header-bg);
 background: linear-gradient(150deg,#b50929 0%,#a326f9 50%,#008fff 100%);
-color:var(--jt-header-color);
+color:var(--jt-nav-color);
 transition-property:transform;
 transition-timing-function:cubic-bezier(.4,0,.2,1);
 transition-duration:.2s;
@@ -232,7 +245,7 @@ border-radius: 6px;
 }
 .bg-dark {
 --bs-bg-opacity: 0 !important;}.g-2{
---bs-gutter-x: 0.6rem;}.pt-4 {padding-top: 1.2rem !important;
+--bs-gutter-x: 0.4rem;}.pt-4 {padding-top: 1.2rem !important;
 }
 .shadow-sm {
 box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px !important;
@@ -251,7 +264,7 @@ transition: 0.1s ease;
 padding: 2px 4px 6px 5px;
 }
 #primary .widget-title>span{
-background-color: ;
+color: var(--jt-heading-link);
 padding-right:5px;
 position:relative;
 }
@@ -303,7 +316,7 @@ user-select: text;
 display:inline-block;
 height:1.5em;
 vertical-align:-.35em;
-width:1.1em;
+width:1.2em;
 fill:none;
 stroke:currentColor;
 stroke-linecap:round;
@@ -773,6 +786,6 @@ width: calc(50% - 5px);
 }
 }
 /* Your all custom CSS open here */
-
-
-/*Your all custom CSS close here*/
+.jt-icon:hover {
+    color: var(--jt-link-hover);
+}
